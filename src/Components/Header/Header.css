@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
+  padding: 40px 20px;
+}
+
+/* Profile Image */
+.header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header img:hover {
+  transform: scale(1.05);
+}
+
+/* Header Text */
+.header h1 {
+  width: 70%;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.header h1 span {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  width: 50%;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ccc;
+}
+
+/* Action Buttons */
+.header-action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.header-connect,
+.header-resume {
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-connect {
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  color: white;
+}
+.header-action .anchor-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* removes underline */
+  color: white; /* ensures white text */
+}
+
+.header-resume {
+  border: 2px solid #fff;
+  color: white;
+}
+
+.header-connect:hover {
+  border: 2px solid white;
+}
+
+.header-resume:hover {
+  border-color: #b415ff;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+  .header h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .header p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-action {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-connect,
+  .header-resume {
+    width: 80%;
+  }
+}

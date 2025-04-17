@@ -1,0 +1,35 @@
+.footer {
+  background-color: #1e1e1e;
+  padding: 30px 20px;
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+  border-top: 1px solid #333;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #df8908;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #b415ff;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+
+  .footer a {
+    display: inline-block;
+    margin: 5px 6px;
+  }
+}
